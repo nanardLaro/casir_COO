@@ -13,6 +13,6 @@ abstract class AbstractModel {
 
     public function __toString(): string
     {
-        return implode(' : ', array_values(get_object_vars($this))).PHP_EOL;
+        return implode(' / ', array_values(get_object_vars($this))).PHP_EOL;
     }
 }

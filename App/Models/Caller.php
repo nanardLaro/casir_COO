@@ -5,11 +5,14 @@ namespace App\Models;
 use App\Core\Tools;
 
 class Caller extends AbstractModel {
+    public string $firstname;
     public string $what;
-    public function __construct()
+
+    public function __construct(?string $what = null)
     {
         $this->init();
-        $this->what = Tools::$faker->text();
+        $this->firstname = Tools::getValuesForCurrentIndex($this::class, 'firstnames');
+        $this->what = $what ?? Tools::$faker->text();
     }
 
 }
