@@ -5,12 +5,13 @@ namespace App\Models;
 abstract class AbstractMachine
 {
 
+    public int $serialNumber;
     public string $machineBrand;
     public boolean $isWorking;
+    public boolean $works;
+    public int $accessCode;
     public AbstractPeople $PeopleUsing;
-
-
-
+    public array $arrayProducts;
 
 
 }
