@@ -5,12 +5,14 @@ namespace App\Models;
 class Client extends AbstractPeople
 {
 
-    public PaiementEnum $paymentWay;
+    public float $cash;
+    public bool $CB;
 
-    public function __construct(?string $name = null, \PaiementEnum $paymentWay)
+    public function __construct(?string $name = null, float $cash, bool $CB)
     {
         parent::__construct($name);
-        $this->paymentWay = $paymentWay;
+        $this->$cash = $cash;
+        $this->CB = $CB;
     }
 
 }

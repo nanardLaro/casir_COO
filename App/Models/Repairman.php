@@ -13,4 +13,9 @@ class Repairman extends AbstractPeople
         $this->code = [];
     }
 
+    public function ajouteCode(string $serialNumberMachine, int $code)
+    {
+        $this->code[$serialNumberMachine] = $code;
+    }
+
 }
