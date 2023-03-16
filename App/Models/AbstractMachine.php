@@ -11,7 +11,10 @@ abstract class AbstractMachine
     public boolean $works;
     public int $accessCode;
     public AbstractPeople $PeopleUsing;
-    public array $arrayProducts;
+    /**
+     * @var array <int, AbstractProduct>
+     */
+    public array $Products = [];
 
 
 }

@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Client extends AbstractPeople
+class Customer extends AbstractPeople
 {
 
     public float $cash;
