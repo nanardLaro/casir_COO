@@ -1,0 +1,7 @@
+Café expresso
+Cappuccino
+Chocolat Chaud
+====
+Sandwich thon oeuf
+Sandwich poulet mayo
+====
